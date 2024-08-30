@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class Book {
@@ -15,8 +16,8 @@ class Book {
         }
 
         void displayDetails() {
-        	cout << "Title  " << "   Author  " << "   Year" << endl;
-            cout << title << "\t" << author << "\t" <<  year << endl;
+        	cout << left << setw (20) << "Title" << left << setw (20) << "Author" << left << setw (20) << "Year" << endl;
+        	cout << left << setw (20) << title << left << setw (20) << author << left << setw (20) << year << endl;
         }
 
         string getTitle() {
